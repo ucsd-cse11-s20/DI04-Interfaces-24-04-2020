@@ -112,4 +112,13 @@ Write a class named `Tablespoon` that represents volume measure in tablespoons. 
 Besides the method signatures, is there any code that we could `abstract` out of the `Cup` and `Tablespoon` classes? Create a new abstract class named `AVolume` (A is short for abstract!) which implements `Volume`, and have both `Cup` and `Tablespoon` extend `AVolume`.
 
 ## Problem 5:
-## TODO
+Create a new class named `ExampleVolumes` for testing the code you've written so far, and call the tester library methods at least 4 times to check that adding Cups to Cups, Tablespoons to Tablespoons, Cups to Tablespoons, and Tablespoons to Cups all work correctly.
+
+(Reminder: To use the tester library, your method should return a boolean, start with the word `test` and accept one parameter of type `Tester`.)
+
+## Problem 6: [Extra problem for the curious]
+How could you redesign the problems above such that the `add` method in `Tablespoon` always returned a new `Tablespoon` object, and the `add` method in `Cup` always returned a new `Cup` object? Would you need to add a new method? What parts of the code would need to change?
+
+## Problem 7: [Bonus problem for the adventurous]
+Without changing any method signatures, or adding new methods, to our answers up to problem 3, rewrite the `add` method for `Tablespoon` such that if the `Volume` parameter is of type `Tablespoon` as well, it returns a new `Tablespoon` instance.
+(Note that this is an optional problem requiring Java features we haven't learned about. It is not in scope for the class, so unless you _are_ curious, don't worry about it!)
