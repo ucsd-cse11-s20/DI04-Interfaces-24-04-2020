@@ -4,11 +4,11 @@ Zoom recording: COMING SOON
 
 Problem sheet for this discussion:
 
-COMING SOON
+https://github.com/ucsd-cse11-s20/DI04-Interfaces-24-04-2020/blob/master/ProblemSheet.md
 
 Starter code:
 
-COMING SOON
+https://github.com/ucsd-cse11-s20/DI04-Interfaces-24-04-2020/releases/download/1.0/di04.zip
 
 Readings reviewd in this discussion:
 - [Classes that Share Behavior](https://cseweb.ucsd.edu/classes/sp17/cse11-a/lecture10.html)
