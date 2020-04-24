@@ -64,7 +64,7 @@ In summary, we saw two ways of representing shared behavior in Java. The first w
 interface /* Interface Name */ {
     /* Method Signature */;
     /* Method Signature */;
-    ...
+    /* ... */
 }
 ```
 
@@ -80,7 +80,7 @@ Finally, we saw that classes and abstract classes can `implement` interfaces wit
 
 ```java
 class /* Class Name */ implements /* Interface Name */ { 
-    // ... 
+    /* ... */
 }
 ```
 
@@ -88,7 +88,7 @@ and classes can `extend` abstract classes with the following syntax:
 
 ```java
 class /* Class Name */ extends /* Abstract Class Name */ { 
-    // ... 
+    /* ... */
 }
 ```
 
@@ -106,7 +106,7 @@ In the file `Discussion04.java`, write an `interface` called `Volume` with the f
 Write a class named `Cup` that represents volume measured in cups. It should implement the `Volume` interface, and have one field `cups` which is a double. Implement the `Volume` interface methods in `Cup`. 
 
 ## Problem 3:
-Write a class named `Tablespoon` that represents volume measure in tablespoons. It should implement the `Volume` interface, and have one field `cups` which is a double. Implement the `Volume` interface methods in `Tablespoon`.
+Write a class named `Tablespoon` that represents volume measure in tablespoons. It should implement the `Volume` interface, and have one field `tbsp` which is a double. Implement the `Volume` interface methods in `Tablespoon`.
 
 ## Problem 4:
 Besides the method signatures, is there any code that we could `abstract` out of the `Cup` and `Tablespoon` classes? Create a new abstract class named `AVolume` (A is short for abstract!) which implements `Volume`, and have both `Cup` and `Tablespoon` extend `AVolume`.
@@ -114,11 +114,12 @@ Besides the method signatures, is there any code that we could `abstract` out of
 ## Problem 5:
 Create a new class named `ExampleVolumes` for testing the code you've written so far, and call the tester library methods at least 4 times to check that adding Cups to Cups, Tablespoons to Tablespoons, Cups to Tablespoons, and Tablespoons to Cups all work correctly.
 
-(Reminder: To use the tester library, your method should return a boolean, start with the word `test` and accept one parameter of type `Tester`.)
+(Reminder: To use the tester library, your method should return a `boolean`, start with the word `test` and accept one parameter of type `Tester`.)
 
 ## Problem 6: [Extra problem for the curious]
 How could you redesign the problems above such that the `add` method in `Tablespoon` always returned a new `Tablespoon` object, and the `add` method in `Cup` always returned a new `Cup` object? Would you need to add a new method? What parts of the code would need to change?
 
 ## Problem 7: [Bonus problem for the adventurous]
-Without changing any method signatures, or adding new methods, to our answers up to problem 3, rewrite the `add` method for `Tablespoon` such that if the `Volume` parameter is of type `Tablespoon` as well, it returns a new `Tablespoon` instance.
-(Note that this is an optional problem requiring Java features we haven't learned about. It is not in scope for the class, so unless you _are_ curious, don't worry about it!)
+Without changing any method signatures, or adding new methods, to our answers up to problem 3, rewrite the `add` method for `Tablespoon` such that if the `Volume` parameter is of type `Tablespoon`, it returns a new `Tablespoon` instance, and if it's of type `Cup`, it returns a `Cup` as usual.
+
+(*Note*: This is an optional problem requiring Java features we haven't learned about. It is not in scope for the class, so don't worry if you can't answer it!)
