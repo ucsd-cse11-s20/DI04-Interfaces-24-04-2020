@@ -99,7 +99,9 @@ class ExampleVolumes {
         return t.checkExpect(1.0 / 16.0, oneTablespoon.toCups()) &&
             t.checkExpect(2.0 / 16.0, twoTablespoons.toCups()) &&
             t.checkExpect(8.0 / 16.0, eightTablespoons.toCups()) &&
-            t.checkExpect(16.0 / 16.0, sixteenTablespoons.toCups());
+            t.checkExpect(16.0 / 16.0, sixteenTablespoons.toCups()) &&
+            t.checkExpect(3.0 / 16.0, threeTablespoons.toCups()) &&
+            t.checkExpect(4.0 / 16.0, fourTablespoons.toCups());
     }
 
     boolean testCoversions(Tester t) {
