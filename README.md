@@ -4,7 +4,7 @@ Zoom recording: https://drive.google.com/file/d/1YQ0mWCovc5RRqDEteWPRRKcQdwSoe4q
 
 Problem sheet for this discussion:
 
-https://github.com/ucsd-cse12-s20/DI04-Interfaces-24-04-2020/blob/master/ProblemSheet.md
+https://github.com/ucsd-cse11-s20/DI04-Interfaces-24-04-2020/blob/master/ProblemSheet.md
 
 Starter code:
 
